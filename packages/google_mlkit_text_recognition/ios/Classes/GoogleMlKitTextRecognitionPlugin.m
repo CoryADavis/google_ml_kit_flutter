@@ -57,8 +57,8 @@
     NSNumber *scriptValue = call.arguments[@"script"];
     switch(scriptValue.intValue) {
         default : {
-            MLKTextRecognizerOptions *latinOptions = [[MLKTextRecognizerOptions alloc] init];
-            return [MLKTextRecognizer textRecognizerWithOptions:latinOptions];
+            MLKJapaneseTextRecognizerOptions *japaneseOptions = [[MLKJapaneseTextRecognizerOptions alloc] init];
+            return [MLKTextRecognizer textRecognizerWithOptions:japaneseOptions];
         }
 #ifdef _has_chinese
         case 1 : {
