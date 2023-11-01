@@ -13,7 +13,6 @@ import com.google.mlkit.vision.text.chinese.ChineseTextRecognizerOptions;
 import com.google.mlkit.vision.text.devanagari.DevanagariTextRecognizerOptions;
 import com.google.mlkit.vision.text.japanese.JapaneseTextRecognizerOptions;
 import com.google.mlkit.vision.text.korean.KoreanTextRecognizerOptions;
-import com.google.mlkit.vision.text.latin.TextRecognizerOptions;
 import com.google_mlkit_commons.InputImageConverter;
 
 import java.util.ArrayList;
@@ -56,7 +55,7 @@ public class TextRecognizer implements MethodChannel.MethodCallHandler {
         int script = (int) call.argument("script");
         switch (script) {
             case 0:
-                return TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS);
+                return TextRecognition.getClient(new JapaneseTextRecognizerOptions.Builder().build());
             case 1:
                 return TextRecognition.getClient(new ChineseTextRecognizerOptions.Builder().build());
             case 2:
