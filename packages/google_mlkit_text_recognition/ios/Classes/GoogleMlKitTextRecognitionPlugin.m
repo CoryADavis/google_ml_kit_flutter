@@ -1,5 +1,4 @@
 #import "GoogleMlKitTextRecognitionPlugin.h"
-#import <MLKitTextRecognition/MLKitTextRecognition.h>
 #import <MLKitTextRecognitionCommon/MLKitTextRecognitionCommon.h>
 #if __has_include(<MLKitTextRecognitionChinese/MLKitTextRecognitionChinese.h>)
 #import <MLKitTextRecognitionChinese/MLKitTextRecognitionChinese.h>
